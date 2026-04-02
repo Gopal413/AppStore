@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import GamesApp from "../Games/GamesApp"
-import NewsApp from "../News/NewsApp";
+//import GamesApp from "../Games/GamesApp"
+//import NewsApp from "../News/NewsApp";
 import FoodApp from "../Food/FoodApp";
-import SocialApp from "../Social/SocialApp";
+//import SocialApp from "../Social/SocialApp";
 import "./MainApp.css"
 
 
@@ -79,12 +79,10 @@ function MainApp() {
        
         <ul className="data">
         {result2.map((val)=>(
-          <div key={val.id}>
-          <FoodApp val ={val}/>,
-          <GamesApp  val={val} />,
-          <SocialApp  val ={val}/>,
-          <NewsApp  val ={val}/>
-          </div>
+          <li key={val.id}>
+          <FoodApp val ={val}/>
+         
+          </li>
         ))}
         
         </ul>
